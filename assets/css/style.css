@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 990px;
+  height: 100px;
+  background-color: red;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  background-color: green;
+}
+
+.menu {}
