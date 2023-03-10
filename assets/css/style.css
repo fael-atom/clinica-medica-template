@@ -1,3 +1,7 @@
+* {
+  font-family: Arial;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -14,7 +18,6 @@ header {
   display: flex;
   justify-content: space-between;
   width: 990px;
-  height: 100px;
 }
 
 .logo {
@@ -32,7 +35,6 @@ nav li {
   list-style: none;
   margin: 0;
   padding: 0;
-
 }
 
 nav ul {
@@ -45,7 +47,6 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   color: #727272;
-  font-family: Arial;
 }
 
 nav .active a,
@@ -55,8 +56,90 @@ nav a:hover {
 }
 
 #banner {
-  background-image: url('../images/imagem-fundo.jpg');
+  display: flex;
+  justify-content: center;
+  background-image: url("../images/imagem-fundo.jpg");
   background-position: center;
-  background-size: cover; 
+  background-size: cover;
   height: 670px;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.banner_headline {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner_headline h1 {
+  color: #fff;
+  font-size: 70px;
+  text-shadow: 0px 1px 0px #555;
+  margin: 0;
+  padding: 0;
+  max-width: 350px;
+}
+
+.banner_headline h2 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 21px;
+  text-shadow: 0px 1px 0px #555;
+  max-width: 350px;
+  margin-top: 30px;
+}
+
+.banner_options {
+  background-color: green;
+  height: 210px;
+  display: flex;
+}
+
+.banner1,
+.banner2,
+.banner3 {
+  flex: 1;
+  color: #fff;
+  padding: 20px;
+}
+
+.banner1 {
+  background-color: #39aae1;
+}
+.banner2 {
+  background-color: #0079c7;
+}
+.banner3 {
+  background-color: #2b4c99;
+}
+
+.banner_title {
+  font-size: 21px;
+}
+
+.banner_desc {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.margin_desc {
+  margin-top: 10px;
+  border-bottom: 1px solid #4468b2;
+}
+
+.banner_options a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px;
+  border: 1px solid #fff;
+  font-size: 12px;
+  color: #fff;
 }
