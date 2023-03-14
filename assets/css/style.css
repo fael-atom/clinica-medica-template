@@ -118,11 +118,13 @@ nav a:hover {
   background-color: #2b4c99;
 }
 
-.banner_title {
+.banner_title,
+.title-menu {
   font-size: 21px;
 }
 
-.banner_desc {
+.banner_desc,
+.desc-menu {
   display: flex;
   justify-content: space-between;
   font-size: 12px;
@@ -245,11 +247,22 @@ article .news-title {
   font-size: 23px;
 }
 
-article .news-resume {
+article .news-resume,
+.widget-body .post-text {
   font-size: 14px;
   line-height: 20px;
   color: #5c5c5c;
   margin-bottom: 30px;
+}
+
+.widget-body .post-text {
+  margin-bottom: 0px;
+}
+
+.widget-body .post-timeago {
+  font-size: 10px;
+  color: #0079c7;
+  margin-top: 5px;
 }
 
 footer {
@@ -281,10 +294,6 @@ footer {
   background-color: #2b4c99;
 }
 
-.flexColumn {
-  flex-direction: column;
-}
-
 .footer-area {
   display: flex;
 }
@@ -304,4 +313,8 @@ footer .widget-title-text {
   line-height: 40px;
   color: #5c5c5c;
   margin-top: 30px;
+}
+
+.flexColumn {
+  flex-direction: column;
 }
